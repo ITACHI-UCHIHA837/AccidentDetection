@@ -9,6 +9,7 @@ import {
 export default function AIBar() {
     
 
+  
   const [message, setMessage] = useState("");
 
   const handleSend = async () => {

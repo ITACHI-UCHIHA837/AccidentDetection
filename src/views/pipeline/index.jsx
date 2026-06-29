@@ -15,7 +15,8 @@ import { Sidebar } from 'lucide-react';
 
 //import FormulaCard from './components/FormulaCard';
 
-// Inside your component, derive the result:
+// Inside your component, derive the result
+
 
 
 
