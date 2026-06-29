@@ -1,0 +1,175 @@
+// body {
+//   margin: 0;
+//   background: #05070d;
+//   font-family: Arial;
+//   color: white;
+// }
+
+// .container {
+//   padding: 30px;
+// }
+
+// .title {
+//   font-size: 32px;
+// }
+
+// .title span {
+//   background: linear-gradient(90deg, #00e5ff, #ff00c8);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+// /* STEPS */
+// .steps {
+//   display: flex;
+//   gap: 10px;
+//   margin: 20px 0;
+// }
+
+// .step {
+//   flex: 1;
+//   padding: 12px;
+//   border: 1px solid #222;
+//   border-radius: 10px;
+//   text-align: center;
+//   color: #aaa;
+// }
+
+// .step.active {
+//   border-color: #ff00c8;
+//   box-shadow: 0 0 10px #ff00c8;
+//   color: white;
+// }
+
+// /* GRID */
+// .grid {
+//   display: grid;
+//   grid-template-columns: 2fr 2fr 1.5fr;
+//   gap: 20px;
+// }
+
+// /* CARD */
+// .card {
+//   background: #0b1325;
+//   padding: 20px;
+//   border-radius: 12px;
+//   border: 1px solid #1a2238;
+// }
+
+// /* INPUT */
+// input, select {
+//   width: 100%;
+//   padding: 10px;
+//   margin: 8px 0 15px;
+//   border-radius: 8px;
+//   border: 1px solid #222;
+//   background: #05070d;
+//   color: white;
+// }
+
+// input:focus, select:focus {
+//   outline: none;
+//   border-color: #00e5ff;
+//   box-shadow: 0 0 6px #00e5ff;
+// }
+
+// /* RESULT */
+// .result-row {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 10px;
+//   color: #ccc;
+// }
+
+// .result-box {
+//   margin: 15px 0;
+//   padding: 12px;
+//   border: 1px solid #00ff9d;
+//   border-radius: 8px;
+//   color: #00ff9d;
+// }
+
+// /* BUTTON */
+// .btn {
+//   width: 100%;
+//   padding: 12px;
+//   border: none;
+//   border-radius: 10px;
+//   background: linear-gradient(90deg, #00e5ff, #ff00c8);
+//   color: white;
+//   cursor: pointer;
+//   font-weight: bold;
+// }
+
+// .btn:hover {
+//   box-shadow: 0 0 12px #ff00c8;
+// }
+
+// /* SVG */
+// .svg-box {
+//   margin-top: 20px;
+// }
+
+// svg {
+//   width: 100%;
+//   filter: drop-shadow(0 0 6px #00e5ff);
+// }
+
+
+
+
+.input-card {
+  background: #0b1325;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #1a2238;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.input-col h4 {
+  margin-bottom: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 14px;
+  border-radius: 8px;
+  border: 1px solid #222;
+  background: #05070d;
+  color: white;
+}
+
+input:focus, select:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 6px #00e5ff;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.unit {
+  margin-left: 8px;
+  color: #888;
+}
+
+.variables {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.variables span {
+  color: #ff00c8;
+}

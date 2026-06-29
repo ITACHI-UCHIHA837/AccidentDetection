@@ -1,0 +1,328 @@
+.bgred{
+    background-color:#fbd1c5;
+}
+.bggreen{
+    background-color: rgb(135, 251, 135);
+}
+
+.cen{
+    // height: 10rem;
+    //width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxgreenn{
+    margin-top: 25px;
+    padding:20px;
+     border: 0.5px solid #86efac;
+    border-radius: 15px;
+    color: black;
+    background-color: rgb(135, 251, 135);
+   // font-size: large;
+}
+.boxred{
+    margin-top: 25px;
+    padding:20px;
+     background-color: rgb(251, 135, 135);
+     border: 0.5px solid #f77b7b;
+    border-radius: 15px;
+    color: black;
+   // font-size: large;
+}
+.p{
+    color: black;
+    font-size: large;
+}
+
+// FormulaCard.scss
+
+.formula-card {
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  background: var(--color-background-primary);
+  margin-bottom: 1rem;
+
+  // ── Header ───────────────────────────────────────────
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-background-secondary);
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+    padding: 10px 14px;
+  }
+
+  &__title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  // ── Badge ─────────────────────────────────────────────
+  &__badge {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+
+    &--pending {
+      background: var(--color-background-secondary);
+      color: var(--color-text-tertiary);
+      border: 0.5px solid var(--color-border-tertiary);
+    }
+
+    &--pass {
+      background: #EAF3DE;
+      color: #27500A;
+      border: 0.5px solid #97C459;
+    }
+
+    &--fail {
+      background: #FCEBEB;
+      color: #791F1F;
+      border: 0.5px solid #F09595;
+    }
+  }
+
+  // ── Body ──────────────────────────────────────────────
+  &__body {
+    padding: 14px;
+  }
+
+  // ── Formula section ───────────────────────────────────
+  &__formula-section {
+    margin-bottom: 14px;
+  }
+
+  &__formula-label {
+    font-size: 11px;
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+
+  &__formula-symbolic {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    background: var(--color-background-secondary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-md);
+    padding: 9px 12px;
+    margin-bottom: 6px;
+  }
+
+  &__formula-substituted {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--color-text-tertiary);
+    background: var(--color-background-tertiary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-md);
+    padding: 8px 12px;
+    transition: color 0.2s;
+
+    &--filled {
+      color: var(--color-text-info);
+    }
+  }
+
+  // ── Divider ───────────────────────────────────────────
+  &__divider {
+    height: 0.5px;
+    background: var(--color-border-tertiary);
+    margin: 14px 0;
+  }
+
+  // ── Variable rows ─────────────────────────────────────
+  &__vars {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__var-row {
+    display: grid;
+    grid-template-columns: 28px 1fr 180px 90px;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__var-symbol {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  &__var-desc {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+  }
+
+  &__var-base {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--color-text-secondary);
+  }
+
+  // ── Input + unit toggle group ─────────────────────────
+  &__input-group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    flex: 1;
+    min-width: 0;
+    height: 28px;
+    font-size: 12px;
+    padding: 4px 8px;
+    border: 0.5px solid var(--color-border-secondary);
+    border-right: none;
+    border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
+    background: var(--color-background-primary);
+    color: var(--color-text-primary);
+    outline: none;
+
+    &:focus {
+      border-color: var(--color-border-info);
+    }
+
+    // range overrides
+    &[type='range'] {
+      padding: 0 6px;
+      cursor: pointer;
+    }
+  }
+
+  &__unit-toggle {
+    display: flex;
+    height: 28px;
+    border: 0.5px solid var(--color-border-secondary);
+    border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  &__unit-btn {
+    font-size: 11px;
+    padding: 0 7px;
+    height: 100%;
+    background: var(--color-background-secondary);
+    color: var(--color-text-secondary);
+    border: none;
+    border-left: 0.5px solid var(--color-border-tertiary);
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:first-child {
+      border-left: none;
+    }
+
+    &--active {
+      background: var(--color-background-info);
+      color: var(--color-text-info);
+      font-weight: 500;
+    }
+  }
+
+  &__range-readout {
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    text-align: right;
+    margin-top: 2px;
+  }
+
+  // ── Result box ────────────────────────────────────────
+  &__result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    border-radius: var(--border-radius-md);
+    padding: 10px 14px;
+    border: 0.5px solid var(--color-border-tertiary);
+    background: var(--color-background-secondary);
+
+    &--filled {
+      background: var(--color-background-success);
+      border-color: var(--color-border-success);
+
+      .formula-card__result-label,
+      .formula-card__result-value {
+        color: var(--color-text-success);
+      }
+    }
+  }
+
+  &__result-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-tertiary);
+    margin-bottom: 6px;
+  }
+
+  &__result-value {
+    font-family: var(--font-mono);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text-tertiary);
+  }
+
+  &__result-unit {
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 4px;
+  }
+
+  &__result-unit-toggle {
+    display: flex;
+    gap: 4px;
+    margin-top: 6px;
+  }
+
+  &__result-unit-btn {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 0.5px solid var(--color-border-success);
+    background: transparent;
+    color: var(--color-text-success);
+    cursor: pointer;
+
+    &--active {
+      background: var(--color-background-primary);
+      font-weight: 500;
+    }
+
+    &--pending {
+      border-color: var(--color-border-tertiary);
+      color: var(--color-text-tertiary);
+    }
+  }
+
+  // ── Reference ─────────────────────────────────────────
+  &__ref {
+    font-size: 11px;
+    color: var(--color-text-tertiary);
+    margin-top: 10px;
+
+    a {
+      color: var(--color-text-info);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
