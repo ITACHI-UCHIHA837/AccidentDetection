@@ -81,7 +81,7 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-     base: API_URL,
+     base: API_URL || '/AccidentDetection ',
     //  base: "/",
       // base: "/ASME",
      
