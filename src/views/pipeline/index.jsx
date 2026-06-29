@@ -343,7 +343,7 @@ console.log(calculationResult);
                </Col>
                <Col md={12}>
                </Col>
-                 <AIBar  />
+                 <AIBar/>
    
          
       </Row>
